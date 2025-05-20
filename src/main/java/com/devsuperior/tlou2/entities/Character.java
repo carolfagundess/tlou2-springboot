@@ -25,8 +25,7 @@ public class Character {
     private String status;
     private String imgUrl;
     private String shortDescription;
-    private String longDescription;  // Corrigido de longDecription
-
+    private String longDescription;  
     public Character() {
     }
 
