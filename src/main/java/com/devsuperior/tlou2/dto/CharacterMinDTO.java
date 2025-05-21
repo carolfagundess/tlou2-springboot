@@ -5,6 +5,8 @@ import com.devsuperior.tlou2.entities.Character;
 /**
  *
  * @author carol
+ * UMA VERSAO DA ENTIDADE COM APENAS 5 DADOS (PREVIEW)
+ * REQUISACAO PARA APENAS 5 CAMPOS
  */
 public class CharacterMinDTO {
 
