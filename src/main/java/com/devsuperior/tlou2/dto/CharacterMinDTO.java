@@ -1,6 +1,7 @@
 package com.devsuperior.tlou2.dto;
 
 import com.devsuperior.tlou2.entities.Character;
+import com.devsuperior.tlou2.projections.CharacterMinProjection;
 
 /**
  *
@@ -25,6 +26,15 @@ public class CharacterMinDTO {
         faction = entity.getFaction();
         imgUrl = entity.getImgUrl();
         shortDescription = entity.getShortDescription();
+    }
+    
+    //metodo construtor que recebe um projection e constroi um objeto dto
+    public CharacterMinDTO(CharacterMinProjection projection) {
+        id = projection.getId();
+        name = projection.getName();
+        faction = projection.getFaction();
+        imgUrl = projection.getImgUrl();
+        shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
